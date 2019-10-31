@@ -1,0 +1,154 @@
+/* This line is importing the font 'Roboto'. DO NOT change line 2*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/* Below this line is where you will start your work */
+/* It is important to note, you will not be writing any CSS in this file*/
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #3f043c;
+  color: #8cc53b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+.menu-button {
+  background-color: #3f043c;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  color: #8cc53b;
+  font-weight: 400;
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  /* This give the height 100% of the screen or, '100% of View Height' */
+  background-color: #3f043c;
+  border: 1px solid #004D40;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+  /* This set the layer level of the element, it has precendence over initial level of 1*/
+}
+
+/* I adjusted the padding down to 23 px and the font from 36 down to 28 - It just LOOKS BETTER! */
+
+.menu ul li {
+  list-style-type: none;
+  font-size: 28px;
+  padding: 23px 0;
+  text-align: left;
+}
+.menu--open {
+  display: block;
+}
+.articles {
+  margin-top: 95px;
+}
+
+/* I adjusted the box-shadow, juusstttt a little! Annnddd  changed the bg color to  #f2e2ce. */
+.article {
+  margin: 20px 10%;
+  padding: 0 20px 25px;
+  border: 1px solid #3f043c;
+  border-radius: 10px;
+  background-color: #f2e2ce;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px 2px ;
+}
+.article h2 {
+  font-size: 28px;
+  padding: 0;
+  margin: 15px 0 0;
+}
+.article .date {
+  margin: 0;
+  font-size: 14px;
+}
+.article .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.article .hide-btn {
+  display: none;
+}
+.article .collapseButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  color: #3f043c;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color:  #f2e2ce;
+}
+
+
+/* I changed the bg color to  #f2e2ce */
+
+.article .expandButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  color: #3f043c;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color: #f2e2ce;
+}
+.article .remove {
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  font-size: 16px;
+  color: grey;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color: white;
+}
+.article-open {
+  height: 400px;
+}
+
+
+/* I changed the font and background colors.  I liked it! */
+
+html,
+body {
+  color: #3f043c;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  background-color: #c7720f;
+}
